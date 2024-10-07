@@ -1,0 +1,240 @@
+@font-face {
+    font-family: "Baskervville-SC";
+    src: url(fonts/baskervvillesc-regular-webfont.woff2) format("woff2"),
+         url(fonts/baskervvillesc-regular-webfont.woff) format("woff");
+}
+@font-face {
+    font-family: "Bona-Nova-SC";
+    src: url(fonts/bonanovasc-regular-webfont.woff2) format("woff2"),
+         url(fonts/bonanovasc-regular-webfont.woff) format("woff");
+}
+@font-face {
+    font-family: "DM-Serif-Display";
+    src: url(fonts/dmserifdisplay-regular-webfont.woff2) format("woff2"),
+         url(fonts/dmserifdisplay-regular-webfont.woff) format("woff");
+}
+@font-face {
+    font-family: "Spectral";
+    src: url(fonts/spectral-regular-webfont.woff2) format("woff2"),
+         url(fonts/spectral-regular-webfont.woff) format("woff");
+}
+@font-face {
+    font-family: "Spectral-Italic";
+    src: url(fonts/spectral-italic-webfont.woff2) format("woff2"),
+         url(fonts/spectral-italic-webfont.woff) format("woff");
+}
+@font-face {
+    font-family: "Spectral-Bold";
+    src: url(fonts/spectral-bold-webfont.woff2) format("woff2"),
+         url(fonts/spectral-bold-webfont.woff) format("woff");
+}
+@font-face {
+    font-family: "Spectral-Light";
+    src: url(fonts/spectral-light-webfont.woff2) format("woff2"),
+         url(fonts/spectral-light-webfont.woff) format("woff");
+}
+@font-face {
+    font-family: "Cormorant";
+    src: url(fonts/Cormorant-VariableFont_wght.ttf) format("truetype-Variations");
+}
+@font-face {
+    font-family: "Danfo";
+    src: url(fonts/Danfo-Regular-VariableFont_ELSH.ttf) format("truetype-variations");
+}
+@font-face {
+    font-family: "Playfair-Display";
+    src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf) format("truetype-variations");
+    font-weight: 400 900;
+}
+
+body{
+    background-color: floralwhite;
+    font-size: 16px;
+    margin: auto;
+    display: flow-root;
+    overflow: auto;
+    padding: 0%;
+}
+h1{
+    color: rgb(1, 75, 2);
+    font-family: "DM-Serif-Display", georgia;
+    font-size: 30px;
+    border-top: 1px inset rgb(79, 139, 222);
+    border-bottom: 1px inset rgb(105, 241, 150);
+    border-left: 1px outset rgb(224, 97, 97);
+    border-right: 1px outset rgb(245, 245, 150);
+    text-shadow: 1px 3px 5px rgb(255, 169, 169), -1px -3px 5px rgb(150, 255, 253);
+    box-shadow: 5px 5px 10px rgb(105, 208, 246),-5px -5px 10px rgb(246, 161, 105);
+    height: 60px;
+    text-align: center;
+    padding-top: 3%;
+    /* background-color: beige; */
+}
+h2,h3{
+    font-family: "Baskervville-SC", Garamond;
+    text-align: center;
+}
+button{
+    font-family: "Playfair-Display", tahoma;
+    font-weight: 800;
+    border-style: ridge;
+}
+header,footer{
+    background-color: rgb(255, 255, 177);
+    overflow: auto;
+}
+header{
+    border-bottom: solid 2px black;
+    margin-bottom: 0.5%;
+}
+main{
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    margin-bottom: 0.5%;
+    /* background-image:url(img/boots.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover; */
+}
+footer{
+    border-top: solid 2px black;
+    font-family: tahoma;
+    font-size: 15px;
+    padding-left: 1%;
+}
+.headerButton{
+    color: darkcyan;
+    background-color: bisque;
+    border-radius: 5px;
+    font-size: 15px;
+    border: double rgb(214, 163, 104);
+    cursor: grab;
+}
+.operationDaysRow{
+    background-color: bisque;
+    color: rgb(7, 172, 103);
+    font-family: Danfo;
+    font-size: 17px;
+    /* font-weight: bold; */
+}
+.operationNoteRow{
+    background-color: rgb(255, 246, 222);
+}
+.operationDayAndHoursHeading{
+    font-family: Danfo,"Baskervville-SC", Garamond;
+    font-size: 25px;
+    color: rgb(0, 215, 166);
+    background: linear-gradient(to right,rgb(0, 174, 255),rgb(0, 255, 76));
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+/* .operationDayAndHoursHeading::after{
+    text-decoration: none;
+    color: transparent;
+    content: "😁";
+    font-size: 50px;
+} */
+#purchaseDate{
+    width: 173px;
+}
+.operationDaysAndHoursSection{
+    text-align: center;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+.operationDaysAndHoursTable{
+    /* border-style: ridge;
+    border-width: 3px;
+    border-color: rgba(18, 96, 7, 0.878); */
+    border: ridge 3px rgba(18, 96, 7, 0.878);
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    /* text-align: left; */
+}
+.navBar{
+    margin: 3%;
+    text-align: center;
+    /* padding: 10px; */
+}
+.dropDown{
+    display: inline-block;
+}
+.dropDown a:not(:has(.headerButton)){
+    display: block;
+    color: rgb(0, 91, 91);
+    padding: 5%;
+    text-decoration: none;
+    cursor: grabbing;
+}
+.dropDown .dropDownContent{
+    display: none;
+    background-color: rgb(250, 238, 223);
+    position: absolute;
+    min-width: 70px;
+    box-shadow: 5px 5px bisque;
+}
+.dropDown:hover .dropDownContent{
+    display: block;
+}
+pre{
+    text-align: left;
+    white-space: pre-line;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.headerButton:hover{
+    color: rgb(0, 91, 91);
+    background-color: rgb(250, 238, 223);
+    font-size: 15.5px;
+}
+.headerButton:active{
+    color: rgb(4, 213, 213);
+    background-color: rgb(250, 238, 223);
+    font-size: 15.5px;
+}
+#footerEmail{
+    color: rgb(11, 98, 101);
+    text-decoration: none;
+}
+#footerEmail:hover{
+    color: rgb(0, 30, 255);
+}
+#footerEmail:active{
+    color: rgb(255, 0, 0);
+}
+#indexp1{
+    text-align: center;
+}
+#indexp1::first-letter{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#homepageImage{
+    display: block;
+    margin: auto;
+
+}
+.icon{
+    vertical-align: bottom;
+    display: inline-block;
+}
+.gifCollection{
+    display: flex;
+    margin: 2%;
+    padding: 0% 3% 0% 3%;
+    /* flex-direction: row; */
+    justify-content: center;
+    column-gap: 1%;
+}
+.logoAndTitle{
+    display: flex;
+    flex-direction: row;
+}

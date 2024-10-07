@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="img/logo/logo90x90px.png">
+        <style>
+            label{
+                width:100px;
+                display: inline-block;
+            }
+            input{
+                width: 170px;
+                background-color: bisque;
+            }
+        </style>
+        <title>Services page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to the services page of Shoe Knockers</h1><hr>
+        
+            <a href="home.html" target="_blank" title="Goes to the homepage" ><button class="headerButton">Home</button></a>
+    
+            <a href="shop.html" target="_self" title="Goes to the shopping page" style="text-decoration: none;"><button class="headerButton">Shop</button></a>
+            <ul>
+                <li>Men</li>
+                <li>Women</li>
+                <li>Children</li>
+            </ul>
+    
+            <a href="about.html" target="_self" title="Goes to the about page" style="text-decoration: none;"><button class="headerButton">About</button></a>
+            <ul>
+                <li>Who we are</li>
+                <li>History</li>
+            </ul>
+    
+            <a href="services.html" target="_self" title="Goes to the services page" style="text-decoration: none;"><button class="headerButton">Services</button></a>
+            <ul>
+                <li>Return policy</li>
+                <li>Exhange program</li>
+                <li>Open a supplier account</li>
+            </ul>
+    
+            <a href="contact.html" target="_self" title="Goes to the contacts page" style="text-decoration: none;"><button class="headerButton">Contact</button></a>
+            <ul>
+                <li>Email</li>
+                <li>Phone number</li>
+                <li>Submission box</li>
+            </ul>
+        </header>
+
+        <main>
+            <h2>Return policy</h2>
+            <p>We only accept returns once the customer claims faults or raises a problem with the product to one of our representatives a week at most after purchasing an item<br><br>Once items leave the country, they aren't covered anymore by the return policy<br><br>To request a return policy fill in the form below</p>
+            <form>
+                <label for="username">Username</label>
+                <input type="text" id="username" minlength="3" maxlength="12" placeholder="Enter your login username" required>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your login email" required>
+                <br>
+                <label for="phoneNo">Phone Number</label>
+                <input type="number" id="phoneNo" maxlength="15" minlength="10" pattern="(\+254|^){1}[ ]?[7]{1}([0-3]{1}[0-9]{1})[ ]?[0-9]{3}[ ]?[0-9]{3}\z" placeholder="Enter your phone number" required>
+                <br>
+                <label for="purchaseDate">Purchase Date</label>
+                <input id="purchaseDate" type="date" placeholder="Enter the date of purchase" required>
+                <br>
+                <input type="reset" style="width: 57px;">
+                <br>
+                <input type="submit" style="width: 57px;">
+            </form>
+    
+            <h2>Exhange program</h2>
+            <p>Once in a while when an individual has a rare or collector's shoe, we as shoe knockers can facilitate to purchase that shoe off the individual at a respectable market value. If you happen to be in any of these categories, first fill in the form below after which one of our representatives will give you a call to set up a vetting session</p>
+            <form>
+                <label for="username">Username</label>
+                <input type="text" id="username" minlength="3" maxlength="12" placeholder="Enter your login username" required>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your login email" required>
+                <br>
+                <label for="phoneNo">Phone Number</label>
+                <input type="number" id="phoneNo" maxlength="15" minlength="10" pattern="(\+254|^){1}[ ]?[7]{1}([0-3]{1}[0-9]{1})[ ]?[0-9]{3}[ ]?[0-9]{3}\z" placeholder="Enter your phone number" required>
+                <br>
+                <label for="picture">Submit pictures of the shoe</label>
+                <input id="picture" type="file" multiple required style="width: 300px;background-color: floralwhite;">
+                <br>
+                <input type="reset" style="width: 57px;background-color: bisque">
+                <br>
+                <input type="submit" style="width: 57px;background-color: bisque">
+            </form>
+    
+            <h2>Open a supplier account</h3>
+            <p>Are you able to supply original kicks at an afforable and unbeatable price?<br><br>Do you believe you can match demand and meet expectation while still making a profit?<br><br>
+            If you feel like you can provide a solid answer to these questions, then feel free to reach out by email or give us a call and we can see how we can go ahead to get you involved in our supplier program</p>
+        </main>
+
+        <footer>
+            <pre>
+                This is not a demo or a scam
+                This is the official website
+                Take your time when browsing, viewing and adding to the cart to ensure you don't suffer from buyer's remorse
+            </pre>
+
+            <p>Author: Paul Karanja</p>
+            <p>&copy; Copyright Reserved</p>
+            <p>Email: <a href="mailto:p.ndungu.kara@gmail.com" type="email" id="footerEmail">p.ndungu.kara@gmail.com</p>
+        </footer>
+    </body>
+</html>
